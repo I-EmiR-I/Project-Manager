@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1500</width>
+    <height>835</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1500</width>
+    <height>835</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background:#021027</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_superior">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>214</width>
+         <height>72</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>231</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 24pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9</string>
+        </property>
+        <property name="text">
+         <string>  PA-TECH</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_botones">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>30</y>
+         <width>1241</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetNoConstraint</enum>
+          </property>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+background-color: #031a3f;
+padding: 4px;
+border: 1px solid #fffff8;</string>
+            </property>
+            <property name="text">
+             <string>Proyectos registrados</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+</string>
+            </property>
+            <property name="text">
+             <string>Proyectos activos</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+</string>
+            </property>
+            <property name="text">
+             <string>Proyectos terminados</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QFrame" name="frame_datos">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>1491</width>
+         <height>411</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>1491</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+    background-color: #021027;
+    color: #fffff8;
+}
+
+QHeaderView::section {
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+    font-size: 14pt;
+}
+
+QTableWidget {
+    gridline-color: #fffff8;
+    font-size: 12pt;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: #646464;
+    border: 1px solid #fffff8;
+}</string>
+        </property>
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Codigo</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nombre Del Proyecto</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Cobranza</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Costo</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Utilidad</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Fecha de registro</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QFrame" name="frame_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>380</y>
+          <width>1081</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="geometry">
+          <rect>
+           <x>560</x>
+           <y>150</y>
+           <width>225</width>
+           <height>37</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+background-color: #031a3f;
+padding: 4px;
+border: 1px solid #fffff8;</string>
+         </property>
+         <property name="text">
+          <string>Proyectos registrados</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="geometry">
+          <rect>
+           <x>792</x>
+           <y>150</y>
+           <width>221</width>
+           <height>37</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+</string>
+         </property>
+         <property name="text">
+          <string>Proyectos activos</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="geometry">
+          <rect>
+           <x>1020</x>
+           <y>150</y>
+           <width>226</width>
+           <height>37</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+</string>
+         </property>
+         <property name="text">
+          <string>Proyectos terminados</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>1491</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+    background-color: #021027;
+    color: #fffff8;
+}
+
+QHeaderView::section {
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+    font-size: 14pt;
+}
+
+QTableWidget {
+    gridline-color: #fffff8;
+    font-size: 12pt;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: #646464;
+    border: 1px solid #fffff8;
+}</string>
+        </property>
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Codigo</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nombre Del Proyecto</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Cobranza</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Costo</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Utilidad</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Fecha de Inicio</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_3">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>1491</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+    background-color: #021027;
+    color: #fffff8;
+}
+
+QHeaderView::section {
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+    font-size: 14pt;
+}
+
+QTableWidget {
+    gridline-color: #fffff8;
+    font-size: 12pt;
+
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: #646464;
+    border: 1px solid #fffff8;
+}
+
+
+</string>
+        </property>
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Codigo</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nombre Del Proyecto</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Cobranza</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Costo</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Utilidad</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Fecha de expiracion</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>630</y>
+         <width>401</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+background-color: #031a3f;
+padding: 4px;
+border: 1px solid #fffff8;</string>
+       </property>
+       <property name="text">
+        <string>Agregar Proyecto</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>630</y>
+         <width>401</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+</string>
+       </property>
+       <property name="text">
+        <string>Editar Proyecto</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="geometry">
+        <rect>
+         <x>1080</x>
+         <y>630</y>
+         <width>401</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+</string>
+       </property>
+       <property name="text">
+        <string>Iniciar Proyecto</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>630</y>
+         <width>401</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+background-color: #031a3f;
+padding: 4px;
+border: 1px solid #fffff8;</string>
+       </property>
+       <property name="text">
+        <string>Ver Proyecto</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_11">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>630</y>
+         <width>401</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+</string>
+       </property>
+       <property name="text">
+        <string>Agregar Gasto</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_12">
+       <property name="geometry">
+        <rect>
+         <x>1080</x>
+         <y>630</y>
+         <width>401</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+</string>
+       </property>
+       <property name="text">
+        <string>Terminar Proyecto</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_13">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>630</y>
+         <width>401</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+background-color: #031a3f;
+padding: 4px;
+border: 1px solid #fffff8;</string>
+       </property>
+       <property name="text">
+        <string>Ver gastos</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_14">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>630</y>
+         <width>401</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+</string>
+       </property>
+       <property name="text">
+        <string>Ampliar Garantia</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_15">
+       <property name="geometry">
+        <rect>
+         <x>1080</x>
+         <y>630</y>
+         <width>401</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color:#139bd9;
+    background-color: #031a3f;
+    padding: 4px;
+    border: 1px solid #fffff8;
+</string>
+       </property>
+       <property name="text">
+        <string>Quitar garantia</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
